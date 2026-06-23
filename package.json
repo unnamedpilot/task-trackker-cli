@@ -5,11 +5,11 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "cli.js",
   "scripts": {
     "test": "echo \"This shit doesn't work\" && exit 0"
   },
   "bin": {
-    "task-cli": "./index.js"
+    "task-cli": "./cli.js"
   }
 }
