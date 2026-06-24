@@ -12,4 +12,6 @@ function write(data) {
     console.log("Successful operation")
 }
 
+module.exports = { read, write }
+
 
