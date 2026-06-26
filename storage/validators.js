@@ -29,12 +29,4 @@ function validateTask(task) {
     return true
 }
 
-const test_object = {
-    id: 8,
-    description: "Review software architecture notes",
-    status: "pending",
-    createdAt: "2026-06-17T11:25:00Z",
-    updatedAt: "2026-06-17T11:25:00Z"
-  }
-
-console.log(validateTask(test_object))
+module.exports = { validateTask }
