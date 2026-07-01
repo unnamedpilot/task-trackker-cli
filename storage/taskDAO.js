@@ -18,7 +18,6 @@ function findById(id) {
     const task = tasks.find(t => t.id === id)
 
     if(task === undefined) {
-        console.log("ERROR: no object with specified id")
         return {}
     }
 

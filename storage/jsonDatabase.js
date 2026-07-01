@@ -1,14 +1,15 @@
 const { readFileSync, writeFileSync, appendFileSync, lstat } = require("fs")
+const path = require("path")
 
-const path = "data.json"
+const fileLocation = path.join(__dirname, "../data.json")
 
 function read() {
-    return JSON.parse(readFileSync(path, "utf-8"))
+    return JSON.parse(readFileSync(fileLocation, "utf-8"))
 }
 
 function write(data) {
     const parsedData = JSON.stringify(data)
-    writeFileSync(path, parsedData, "utf-8")
+    writeFileSync(fileLocation, parsedData, "utf-8")
     console.log("Successful operation")
 }
 

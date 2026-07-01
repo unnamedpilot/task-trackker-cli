@@ -6,7 +6,7 @@ const taskSchema = {
         updatedAt: "string"
     }
 
-function validateTask(task) {
+function validateTaskSchema(task) {
 
     if(typeof(task) !== "object") {
         throw new Error(`task requires to be an object, but is a ${typeof(task)}`)
@@ -29,4 +29,4 @@ function validateTask(task) {
     return true
 }
 
-module.exports = { validateTask }
+module.exports = { validateTaskSchema }
